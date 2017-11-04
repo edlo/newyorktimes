@@ -1,1 +1,1 @@
-# [newyorktimes](ebachoura.github.io/newyorktimes)
+# [newyorktimes](https://ebachoura.github.io/newyorktimes)
