@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The New York Times - Breaking News, World News & Multimedia</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="mystyle.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <center><img id="logo" class="navbar-brand" src="nyt-logo.png" href="google.com"></center>
+    <div id="below-logo">
+      <div id="news-nav" class="row container">
+        <div id="news-button-group" class="btn-group lead" role="group" aria-label="Button group with nested dropdown">
+          <button id="top-news-button" class="btn btn-secondary" role="button">Top News Today</button>
+          <div id="most-viewed" class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+              Most Viewed by Section:
+            </button>
+            <div id="section-select" class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item section" href="#" value="Arts">Arts</a>
+              <a class="dropdown-item section" href="#" value="Books">Books</a>
+              <a class="dropdown-item section" href="#" value="Business Day">Business Day</a>
+              <a class="dropdown-item section" href="#" value="Education">Education</a>
+              <a class="dropdown-item section" href="#" value="Fashion & Style">Fashion & Style</a>
+              <a class="dropdown-item section" href="#" value="Food">Food</a>
+              <a class="dropdown-item section" href="#" value="Health">Health</a>
+              <a class="dropdown-item section" href="#" value="Magazine">Magazine</a>
+              <a class="dropdown-item section" href="#" value="Movies">Movies</a>
+              <a class="dropdown-item section" href="#" value="Obituaries">Obituaries</a>
+              <a class="dropdown-item section" href="#" value="Opinion">Opinion</a>
+              <a class="dropdown-item section" href="#" value="Real Estate">Real Estate</a>
+              <a class="dropdown-item section" href="#" value="Science">Science</a>
+              <a class="dropdown-item section" href="#" value="Sports">Sports</a>
+              <a class="dropdown-item section" href="#" value="Style">Style</a>
+              <a class="dropdown-item section" href="#" value="Technology">Technology</a>
+              <a class="dropdown-item section" href="#" value="The Upshot">The Upshot</a>
+              <a class="dropdown-item section" href="#" value="Theater">Theater</a>
+              <a class="dropdown-item section" href="#" value="Times Insider">Times Insider</a>
+              <a class="dropdown-item section" href="#" value="Travel">Travel</a>
+              <a class="dropdown-item section" href="#" value="U">U.S.</a>
+              <a class="dropdown-item section" href="#" value="World">World</a>
+              <a class="dropdown-item section" href="#" value="Your Money">Your Money</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="result-container" class="row">
+        <div id="left-result-container" class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+        <div id="right-result-container" class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+      </div>
+      <div id="back-top-top-container" class="row">
+        <button id="back-to-top" role="button" class="btn btn-link lead">Back to Top</button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"></script>
+
+    <script src="nytimes-api.js"></script>
+    <script>window.NYTimesAPILoadWindow.init()</script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+.btn:hover {
+  cursor: pointer !important;
+}
+
+.searchBar span{
+    background-color: #FFF;
+}
+
+.searchBar input{
+    border-right-style:none;
+    outline: none;
+}
+
+#logo {
+    padding-top: 40px;
+    width: 25%;
+}
+
+#below-logo {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#back-top-top-container {
+  padding-bottom: 40px;
+}
+
+#back-to-top {
+  margin: auto;
+}
+
+.article {
+  position: relative;
+  padding-top: 30px;
+}
+
+.article-image {
+  display: block;
+  width: 100%;
+  /*max-width: 100%;*/
+  transition: .3s ease;
+}
+
+.gradient-overlay {
+  width: inherit;
+  height: 150px;
+  background: linear-gradient(rgba(88,88,88,0), rgba(88,88,88,1));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .3s ease;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  display: inline;
+  padding-top: 60px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  color: #939393;
+}
+
+.article:hover .overlay {
+  opacity: 1;
+}
+
+.article:hover .overlay-head {
+  opacity: 0;
+}
+
+.article:hover .article-image {
+  opacity: 0;
+}
+
+.article:hover .gradient-overlay {
+  opacity: 0;
+}
+
+.article-image {
+  display: block;
+}
+
+.overlay-head {
+  font-size: 2vw;
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+  right: 1vw;
+  transition: .3s ease;
+  color: white;
+  z-index: 1;
+}
+
+.overlay-body {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 2vw;
+}
