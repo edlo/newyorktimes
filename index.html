@@ -10,40 +10,44 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="mystyle.css" rel="stylesheet">
-    <link href="jquery.slider.css" rel="stylesheet">
   </head>
 
   <body>
     <center><img id="logo" class="navbar-brand" src="nyt-logo.png" href="google.com"></center>
-    <div id="below-logo" class="col-xs-12">
-      <div class="row">
-        <div class="col-xs-12">
+    <div id="below-logo">
+      <div id="news-nav" class="row container">
+        <div id="news-button-group" class="btn-group lead" role="group" aria-label="Button group with nested dropdown">
           <button id="top-news-button" class="btn btn-secondary" role="button">Top News Today</button>
-          <div class="slider">
-            <title>Most Viewed by Section</title>
-            <option>Arts</option>
-            <option>Books</option>
-            <option>Business Day</option>
-            <option>Education</option>
-            <option>Fashion & Style</option>
-            <option>Food</option>
-            <option>Health</option>
-            <option>Magazine</option>
-            <option>Movies</option>
-            <option>Obituaries</option>
-            <option>Opinion</option>
-            <option>Real Estate</option>
-            <option>Science</option>
-            <option>Sports</option>
-            <option>Style</option>
-            <option>Technology</option>
-            <option>The Upshot</option>
-            <option>Theater</option>
-            <option>Times Insider</option>
-            <option>Travel</option>
-            <option>U.S.</option>
-            <option>World</option>
-            <option>Your Money</option>
+          <div id="most-viewed" class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+              Most Viewed by Section:
+            </button>
+            <div id="section-select" class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item section" href="#" value="Arts">Arts</a>
+              <a class="dropdown-item section" href="#" value="Books">Books</a>
+              <a class="dropdown-item section" href="#" value="Business Day">Business Day</a>
+              <a class="dropdown-item section" href="#" value="Education">Education</a>
+              <a class="dropdown-item section" href="#" value="Fashion & Style">Fashion & Style</a>
+              <a class="dropdown-item section" href="#" value="Food">Food</a>
+              <a class="dropdown-item section" href="#" value="Health">Health</a>
+              <a class="dropdown-item section" href="#" value="Magazine">Magazine</a>
+              <a class="dropdown-item section" href="#" value="Movies">Movies</a>
+              <a class="dropdown-item section" href="#" value="Obituaries">Obituaries</a>
+              <a class="dropdown-item section" href="#" value="Opinion">Opinion</a>
+              <a class="dropdown-item section" href="#" value="Real Estate">Real Estate</a>
+              <a class="dropdown-item section" href="#" value="Science">Science</a>
+              <a class="dropdown-item section" href="#" value="Sports">Sports</a>
+              <a class="dropdown-item section" href="#" value="Style">Style</a>
+              <a class="dropdown-item section" href="#" value="Technology">Technology</a>
+              <a class="dropdown-item section" href="#" value="The Upshot">The Upshot</a>
+              <a class="dropdown-item section" href="#" value="Theater">Theater</a>
+              <a class="dropdown-item section" href="#" value="Times Insider">Times Insider</a>
+              <a class="dropdown-item section" href="#" value="Travel">Travel</a>
+              <a class="dropdown-item section" href="#" value="U">U.S.</a>
+              <a class="dropdown-item section" href="#" value="World">World</a>
+              <a class="dropdown-item section" href="#" value="Your Money">Your Money</a>
+            </div>
           </div>
         </div>
       </div>
@@ -67,7 +71,6 @@
       crossorigin="anonymous"></script>
 
     <script src="nytimes-api.js"></script>
-    <script src="jquery.slider.js"></script>
     <script>window.NYTimesAPILoadWindow.init()</script>
   </body>
 </html>
