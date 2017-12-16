@@ -7,6 +7,7 @@
 
             $(() => {
                 loadTopNews(leftResultContainer, rightResultContainer);
+                $(".slider").slider(text => loadMostViewedFor(text, leftResultContainer, rightResultContainer));
                 scrollToTop();
             });
             $("#top-news-button").click(() => loadTopNews(leftResultContainer, rightResultContainer));
@@ -27,9 +28,11 @@
         return $("<div></div>").append(
             $("<a></a>").attr({
                 style: "display: block;",
-                href: article.url
+                href: article.url,
             }).append(
-                $("<div></div>").addClass("article").append(
+                $("<div></div>").addClass("article")
+                // .height($(this).width() / article.multimedia[4].width * article.multimedia[4].height)
+                .append(
                     $("<div></div>").addClass("gradient-overlay").append(
                         $("<h1></h1>").addClass("lead overlay-head").append(
                             article.title
@@ -52,7 +55,9 @@
         return $("<div></div>").append(
             $("<a></a>").attr({
                 style: "display: block;",
-                href: article.url
+                href: article.url,
+                width: article.media[0]["media-metadata"][2].width,
+                height: article.media[0]["media-metadata"][2].height
             }).append(
                 $("<div></div>").addClass("article").append(
                     $("<div></div>").addClass("gradient-overlay").append(
