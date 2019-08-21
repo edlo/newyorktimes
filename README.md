@@ -1,1 +1,1 @@
-# [newyorktimes](https://ebachoura.github.io/newyorktimes)
+# [newyorktimes](https://edlo.github.io/newyorktimes)
