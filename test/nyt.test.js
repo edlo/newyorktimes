@@ -119,8 +119,7 @@ describe("New York Times News API tests:", () => {
         });
 
         it("should call the NYT top news api.", () => {
-            expect(request.url).toBe("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=abcf51e76459403795e3" +
-            "1aeac8016017");
+            expect(request.url).toBe("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=wATnxImilnJDgGS1WIU53luhVTAQQA5x");
         });
 
         it("should load divs into both the left and right container, with one anchor element in each div, and within " +
@@ -209,8 +208,7 @@ describe("New York Times News API tests:", () => {
         });
 
         it("should call the NYT top news api.", () => {
-            expect(request.url).toBe("https://api.nytimes.com/svc/mostpopular/v2/mostviewed/Style/7.json?api-key=abcf51e7" +
-            "6459403795e31aeac8016017");
+            expect(request.url).toBe("https://api.nytimes.com/svc/mostpopular/v2/mostviewed/Style/7.json?api-key=wATnxImilnJDgGS1WIU53luhVTAQQA5x");
         });
 
         it("should load divs into both the left and right container, with one anchor element in each div, and within " +
@@ -343,8 +341,7 @@ describe("New York Times News API tests:", () => {
         });
 
         it("should call the NYT top news api.", () => {
-            expect(request.url).toBe("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=abcf51e" +
-            "76459403795e31aeac8016017");
+            expect(request.url).toBe("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=wATnxImilnJDgGS1WIU53luhVTAQQA5x");
         });
 
         it("should load divs into both the left and right container, with one anchor element in each div, " +
@@ -446,7 +443,7 @@ let createArticleBox = (article) => {
 
 let loadTopNews = (leftContainer, rightContainer) => {
     return $.getJSON("https://api.nytimes.com/svc/topstories/v2/home.json", {
-        'api-key': "abcf51e76459403795e31aeac8016017",
+        'api-key': "wATnxImilnJDgGS1WIU53luhVTAQQA5x",
     }).done(result => {
         let leftHalf = result.results.filter((article, index) => index % 2 === 0);
         let rightHalf = result.results.filter((article, index) => index % 2 === 1);

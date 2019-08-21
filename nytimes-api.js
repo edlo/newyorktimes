@@ -75,7 +75,7 @@
 
     let loadTopNews = (leftContainer, rightContainer) => {
         return $.getJSON("https://api.nytimes.com/svc/topstories/v2/home.json", {
-            'api-key': "abcf51e76459403795e31aeac8016017",
+            'api-key': "wATnxImilnJDgGS1WIU53luhVTAQQA5x",
         }).done(result => {
             $("#current-section-name").remove();
             $("#top-news-button").attr('disabled', '');
@@ -94,7 +94,7 @@
     };
     let loadMostViewedFor = (sectionName, leftContainer, rightContainer) => {
         return $.getJSON("https://api.nytimes.com/svc/mostpopular/v2/mostviewed/" + sectionName + "/7.json", {
-            'api-key': "abcf51e76459403795e31aeac8016017",
+            'api-key': "wATnxImilnJDgGS1WIU53luhVTAQQA5x",
         }).done(result => {
             $("#top-news-button").removeAttr("disabled");
             $("#current-section-name").remove();
